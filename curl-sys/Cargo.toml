@@ -30,7 +30,7 @@ optional = true
 features = ["no_log_capture"]
 
 [target.'cfg(all(unix, not(target_os = "macos")))'.dependencies]
-openssl-sys = { version = "0.9.64", optional = true }
+openssl-sys = { version = "0.9.93", optional = true }
 
 [target.'cfg(windows)'.dependencies]
 windows-sys = { version = "0.48", features = ["Win32_Networking_WinSock"] }
